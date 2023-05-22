@@ -1,8 +1,6 @@
 import {useState, useRef, useEffect} from "react"
 
-function useGameLogic() {
-    const STARTING_TIME = 5
-  
+function useGameLogic(STARTING_TIME = 5) {
     const [text, setText] = useState("");
     const [timer, setTimer] = useState(STARTING_TIME);
     const [wordCount, setWordCount] = useState(0);
@@ -23,8 +21,8 @@ function useGameLogic() {
     setTimer(STARTING_TIME);
     setWordCount(0);
     setText("");
-    textBoxRef.current.disabled = false
-    textBoxRef.current.focus()
+    textBoxRef.current.disabled = false;
+    textBoxRef.current.focus();
     }
 
     function endGame(){

@@ -2,7 +2,7 @@ import React from "react"
 import gameLogic from "./hooks/useGameLogic"
 
 function App() {
-  const {textBoxRef, gameState, updateText, text, timer, startGame, wordCount} = gameLogic();
+  const {textBoxRef, gameState, updateText, text, timer, startGame, wordCount} = gameLogic(5);
 
   return (
     <>
